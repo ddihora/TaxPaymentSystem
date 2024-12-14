@@ -51,6 +51,7 @@
     <select id="filter_due_date"></select>
     <label for="tax_rate">Tax Rate:</label>
     <input type="number" id="tax_rate" step="0.01" placeholder="e.g., 0.06">
+    
     <table>
         <thead>
             <tr>
@@ -63,12 +64,21 @@
             </tr>
         </thead>
         <tbody id="summaryTable"></tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><strong>Total Amount:</strong></td>
+                <td id="totalAmount" colspan="4">$0.00</td>
+            </tr>       
+            <tr>
+                <td colspan="2"><strong>Tax Rate:</strong></td>
+                <td id="taxRate" colspan="4">0.00%</td>
+            </tr>
+            <tr>
+                <td colspan="2"><strong>Tax Due:</strong></td>
+                <td id="taxDue" colspan="4">$0.00</td>
+            </tr>
+        </tfoot>
     </table>
-    <div id="totals">
-        <p id="totalAmount">Total Amount: $0.00</p>
-        <p id="taxRate">Tax Rate: 0.00%</p>
-        <p id="taxDue">Tax Due: $0.00</p>
-    </div>
 </div>
 
 <!-- Popup for Editing -->

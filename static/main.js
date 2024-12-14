@@ -69,9 +69,9 @@ async function fetchFilteredPayments() {
     });
 
     // Update totals
-    document.getElementById('totalAmount').textContent = `Total Amount: $${total_amount.toFixed(2)}`;
-    document.getElementById('taxRate').textContent = `Tax Rate: ${(taxRate * 100).toFixed(2)}%`;
-    document.getElementById('taxDue').textContent = `Tax Due: $${tax_due.toFixed(2)}`;
+    document.getElementById('totalAmount').textContent = `$${total_amount.toFixed(2)}`;
+    document.getElementById('taxRate').textContent = `${(taxRate * 100).toFixed(2)}%`;
+    document.getElementById('taxDue').textContent = `$${tax_due.toFixed(2)}`;
 }
 
 // Event listener for filtering
